@@ -7,7 +7,8 @@ import Deals from './pages/Deals.jsx';
 import Food from './pages/Food.jsx';
 import Household from './pages/Household.jsx';
 import PersonalCare from './pages/PersonalCare.jsx';
-
+import SignIn from './components/SignIn.jsx';
+import SignUp from './components/SignUp.jsx';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -25,6 +26,8 @@ function App() {
           <Route path="/food" element={<Food />} />
           <Route path="/household" element={<Household />} />
           <Route path="/personal-care" element={<PersonalCare />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
 
