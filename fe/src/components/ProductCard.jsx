@@ -1,29 +1,35 @@
-export default function ProductCard({ image, name, price, oldPrice, tag }) {
+export default function ProductCard({ product }) {
   return (
-    <div className="border p-4 flex flex-col">
-      {tag && (
+    <div className="border p-4 flex flex-col justify-between">
+      {product.tags.includes("most-popular") && (
         <span className="bg-red-600 text-white text-xs px-3 py-1 rounded-full self-start mb-2">
-          {tag}
+          Most Popular
         </span>
       )}
 
-      <img src={image} alt={name} className="h-40 object-contain mx-auto" />
+      {product.tags.includes("best-deal") && (
+        <span className="bg-red-600 text-white text-xs px-3 py-1 rounded-full self-start mb-2">
+          Best Deal
+        </span>
+      )}
 
-      <div className="mt-4 text-sm">{name}</div>
+      <img
+        src={product.image}
+        alt={product.name}
+        className="h-40 object-contain mx-auto"
+      />
+
+      <p className="mt-4 text-sm">{product.name}</p>
 
       <div className="mt-2">
-        {oldPrice && (
+        {product.oldPrice && (
           <span className="line-through text-gray-400 mr-2">
-            ${oldPrice}
+            ${product.oldPrice}
           </span>
         )}
-        <span className="text-red-600 font-semibold">${price}</span>
-      </div>
-
-      <div className="flex items-center border mt-4">
-        <button className="px-3">−</button>
-        <span className="flex-1 text-center">1</span>
-        <button className="px-3">+</button>
+        <span className="text-red-600 font-semibold">
+          ${product.price}
+        </span>
       </div>
 
       <button className="mt-4 bg-black text-white py-2 rounded-full">
