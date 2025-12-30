@@ -16,10 +16,6 @@ function Home() {
     <>
       <Header />
 
-
-
-
-
       <section
   className="bg-center bg-cover bg-no-repeat"
   style={{
