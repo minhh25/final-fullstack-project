@@ -5,10 +5,13 @@ import {
   FaHeart,
   FaShoppingCart,
 } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import { useAuth } from "../context/AuthContext";
+
 
 export default function Header() {
+  const navigate = useNavigate();
   const items = [
     "deals",
     "food",
@@ -37,8 +40,19 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const dropdownRef = useRef(null);
   const timerRef = useRef(null);
+  const { user, logout } = useAuth();
 
-  /* ===== AUTO CLOSE AFTER 2s ===== */
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
+
+
+  const IconWrapper = ({ children }) => (
+    <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center cursor-pointer hover:bg-white/30 transition">
+      {children}
+    </div>
+  );
+
+
+
   useEffect(() => {
     if (openDropdown) {
       timerRef.current = setTimeout(() => {
@@ -48,7 +62,7 @@ export default function Header() {
     return () => clearTimeout(timerRef.current);
   }, [openDropdown]);
 
-  /* ===== CLOSE ON OUTSIDE CLICK ===== */
+
   useEffect(() => {
     function handleClickOutside(e) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -95,11 +109,71 @@ export default function Header() {
           </Link>
 
           <div className="flex gap-6 text-white text-xl">
-            <FaSearch />
-            <FaMapMarkerAlt />
-            <FaHeart />
-            <FaShoppingCart />
-            <FaUser />
+            <IconWrapper><FaSearch className="text-sm" /></IconWrapper>
+            <IconWrapper><FaMapMarkerAlt className="text-sm" /></IconWrapper>
+            <IconWrapper><FaHeart className="text-sm" /></IconWrapper>
+            <IconWrapper><FaShoppingCart className="text-sm" /></IconWrapper>
+
+            <div className="relative">
+              <div
+                className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center cursor-pointer hover:bg-white/30 transition"
+                onClick={() => setUserMenuOpen((prev) => !prev)}
+              >
+                <FaUser className="text-white text-sm" />
+              </div>
+
+              {userMenuOpen && (
+                <div className="absolute right-0 mt-4 w-48 bg-white text-gray-700 rounded-lg shadow-xl border z-50">
+                  {!user ? (
+                    <>
+                      <Link
+                        to="/signin"
+                        className="block px-4 py-3 hover:bg-gray-50 font-medium"
+                        onClick={() => setUserMenuOpen(false)}
+                      >
+                        Sign In
+                      </Link>
+                      <Link
+                        to="/signup"
+                        className="block px-4 py-4 hover:bg-gray-50"
+                        onClick={() => setUserMenuOpen(false)}
+                      >
+                        Sign Up
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <div className="px-4 py-3 border-b">
+                        <p className="text-sm font-medium">{user.name}</p>
+                        <p className="text-xs text-gray-500">My account</p>
+                      </div>
+
+                      <Link
+                        to="/account"
+                        className="block px-4 py-3 hover:bg-gray-50"
+                        onClick={() => setUserMenuOpen(false)}
+                      >
+                        Account
+                      </Link>
+
+                      <button
+                        className="w-full text-left px-4 py-3 text-red-600 hover:bg-red-50 rounded-b-lg"
+                        onClick={() => {
+                          setUserMenuOpen(false);
+                          logout();
+                          navigate(0);
+
+                  
+                        }}
+                      >
+                        Logout
+                      </button>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+
           </div>
         </div>
       </header>
