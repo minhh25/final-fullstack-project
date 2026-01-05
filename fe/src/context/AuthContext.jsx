@@ -1,45 +1,75 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext();
+const API_URL = "http://localhost:8080/api/auth";
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [token, setToken] = useState(null);
 
   // Simulate session check (later = /auth/me)
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
+    const storedAuth = localStorage.getItem("auth");
+    if (storedAuth) {
+      const { user, token } = JSON.parse(storedAuth);
+      setUser(user);
+      setToken(token);
     }
     setLoading(false);
   }, []);
+  const signUp = async (formData) => {
+    const res = await fetch(`${API_URL}/signup`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      throw new Error(data.message || "Signup failed");
+    }
 
- const login = async (email, password) => {
-  
-  const userData = {
-    email,
-    name: "123",
+
+
+    setUser(data.user);
+    setToken(data.token);
+    localStorage.setItem("auth", JSON.stringify(data));
+    return data;
   };
 
-  setUser(userData);
-  localStorage.setItem("user", JSON.stringify(userData));
-  return userData;
-};
+  const login = async (email, password) => {
+    const res = await fetch(`${API_URL}/signin`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      throw new Error(data.message || "Login failed");
+    }
 
-  const signUp = (userData) => {
-    setUser(userData);
-    localStorage.setItem("user", JSON.stringify(userData));
+
+
+    setUser(data.user);
+    setToken(data.token);
+    localStorage.setItem("auth", JSON.stringify(data));
+    return data;
   };
+
+
+
+
 
   const logout = () => {
+    localStorage.removeItem("auth");
     setUser(null);
-    localStorage.removeItem("user");
+    setToken(null);
+    window.location.href = "/";
   };
 
   return (
     <AuthContext.Provider
-      value={{ user, loading, login, signUp, logout }}
+      value={{ user, token, loading, login, signUp, logout }}
     >
       {children}
     </AuthContext.Provider>

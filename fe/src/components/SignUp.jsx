@@ -1,21 +1,32 @@
 import { Link, useNavigate } from "react-router-dom";
-import { FaGoogle, FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 
-export default function SignUp() {
-  const { signup } = useAuth();
-  const navigate = useNavigate();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+export default function SignUp() {
+  const { signUp } = useAuth();
+  const navigate = useNavigate();
+  const [error, setError] = useState("");
+
+  const [form, setForm] = useState({
+    username: "",
+    email: "",
+    password: "",
+    address: "",
+    phone: "",
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await signup(email, password);
-    navigate("/");
+    try {
+      await signUp(form);
+      navigate("/");
+    } catch (err) {
+      setError(err.message);
+    }
+
   };
 
   return (
@@ -38,10 +49,17 @@ export default function SignUp() {
 
             <form className="space-y-6" onSubmit={handleSubmit}>
               <input
+                type="text"
+                placeholder="Username"
+                onChange={e => setForm({ ...form, username: e.target.value })}
+                className="w-full border px-4 py-2 rounded-md"
+                required
+              />
+
+              <input
                 type="email"
                 placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={e => setForm({ ...form, email: e.target.value })}
                 className="w-full border px-4 py-2 rounded-md"
                 required
               />
@@ -49,18 +67,30 @@ export default function SignUp() {
               <input
                 type="password"
                 placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={e => setForm({ ...form, password: e.target.value })}
                 className="w-full border px-4 py-2 rounded-md"
                 required
               />
+
+              <input
+                placeholder="Address"
+                onChange={e => setForm({ ...form, address: e.target.value })}
+                className="w-full border px-4 py-2 rounded-md"
+                required
+              />
+              <input
+                placeholder="Phone"
+                onChange={e => setForm({ ...form, phone: e.target.value })}
+                className="w-full border px-4 py-2 rounded-md"
+                required />
 
               <button className="w-full bg-indigo-600 text-white py-2.5 rounded-md">
                 Create account
               </button>
             </form>
+             {error && <p className="text-red-600 text-sm mt-4">{error}</p>}
 
-            
+
           </div>
         </div>
 
