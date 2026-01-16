@@ -4,7 +4,6 @@ export default function FilterSidebar({
   onChange,
 }) {
   const categories = [
-    { label: "Food", value: "food" },
     { label: "Fresh Finds", value: "fresh-finds" },
     { label: "Most Popular", value: "most-popular" },
     { label: "Best Deal", value: "best-deal" },
@@ -51,7 +50,7 @@ export default function FilterSidebar({
         <input
           type="range"
           min={0}
-          max={10}
+          max={100}
           step={0.5}
           value={maxPrice}
           onChange={(e) => handlePriceChange(Number(e.target.value))}

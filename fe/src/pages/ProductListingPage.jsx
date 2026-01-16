@@ -2,43 +2,57 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FilterSidebar from "../components/FilterSidebar";
 import ProductGrid from "../components/ProductGrid";
-import PRODUCTS from "../../mock_data/data.js";
-import { useMemo } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 
 export default function ProductListingPage() {
-  const { category } = useParams(); // vegetables, fruit, etc.
+  const { department, category } = useParams(); // vegetables, fruit, etc.
   const [searchParams, setSearchParams] = useSearchParams();
+
+  const [products, setProducts] = useState([]); //list product lấy về từ be
+  
+  
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const res = await fetch("http://localhost:8080/products");
+        const data = await res.json();
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    }
+    fetchProducts();
+  }, [])
+  
 
   // ===== READ FILTERS FROM URL =====
   const selectedTags = searchParams.get("tags")
     ? searchParams.get("tags").split(",")
     : [];
 
-  const maxPrice = Number(searchParams.get("maxPrice")) || 10;
+  const maxPrice = Number(searchParams.get("maxPrice")) || 100;
 
   // ===== FILTER LOGIC =====
   const filteredProducts = useMemo(() => {
-    return PRODUCTS.filter((p) => {
-      const matchCategory = category
-        ? p.tags.includes(category)
+    return products.filter((product) => {
+      const pTags = product.tags || [];
+      const matchDepartment = department === product.department;
+      const matchCategory = category === product.category || !category;
+      const matchTags = selectedTags.length
+        ? selectedTags.some((tag) => pTags.includes(tag))
         : true;
-
-      const matchTag =
-        selectedTags.length === 0 ||
-        selectedTags.some((t) => p.tags.includes(t));
-
-      const matchPrice = p.price <= maxPrice;
-
-      return matchCategory && matchTag && matchPrice;
+      const matchPrice = product.price <= maxPrice;
+      return matchDepartment && matchCategory && matchTags && matchPrice;
     });
-  }, [category, selectedTags, maxPrice]);
+  }, [products, category, selectedTags, maxPrice, department]);
 
   // ===== UPDATE URL =====
   const updateFilters = (nextTags, nextPrice) => {
     const params = {};
     if (nextTags.length) params.tags = nextTags.join(",");
-    if (nextPrice !== 10) params.maxPrice = nextPrice;
+    if (nextPrice !== 100) params.maxPrice = nextPrice;
     setSearchParams(params);
   };
 
@@ -48,7 +62,7 @@ export default function ProductListingPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-10">
         <h1 className="text-5xl font-bold text-center mb-12 capitalize">
-          {category?.replace("-", " ") || "Products"}
+            {(category || department || "Products").replaceAll("-", " ")}
         </h1>
 
         <div className="grid grid-cols-12 gap-10">
