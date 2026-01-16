@@ -1,10 +1,11 @@
 import ProductCard from "./ProductCard";
 
-export default function ProductGrid({ products }) {
+
+export default function ProductGrid({ products  = []}) {
   return (
     <div className="grid grid-cols-3 gap-8">
       {products.map((p) => (
-        <ProductCard key={p.id} product={p} />
+        <ProductCard key={p.id || p._id} product={p} />
       ))}
     </div>
   );

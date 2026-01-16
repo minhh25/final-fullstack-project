@@ -112,7 +112,7 @@ export default function Header() {
             <IconWrapper><FaSearch className="text-sm" /></IconWrapper>
             <IconWrapper><FaMapMarkerAlt className="text-sm" /></IconWrapper>
             <IconWrapper><FaHeart className="text-sm" /></IconWrapper>
-            <IconWrapper><FaShoppingCart className="text-sm" /></IconWrapper>
+            <IconWrapper><FaShoppingCart className="text-sm" onClick={() => navigate("/cart")}/></IconWrapper>
 
             <div className="relative">
               <div

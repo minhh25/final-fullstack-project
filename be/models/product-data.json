@@ -1,0 +1,721 @@
+[
+  {
+    "name": "Lancaster Farm Fresh Carrots - 1lb",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_425b5fac1bc5421eb1308140de5f20db~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_425b5fac1bc5421eb1308140de5f20db~mv2.jpg",
+    "department": "food",
+    "category": "vegetables",
+    "tags": ["fresh-finds"]
+  },
+  {
+    "name": "Red Greenhouse Bell Pepper - 1lb",
+    "price": 4.49,
+    "discountPrice": null,
+    "inStock": true,    
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_7326ce5047ce43be94fa9c7963950913~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_7326ce5047ce43be94fa9c7963950913~mv2.jpg",
+    "department": "food",
+    "category": "vegetables",
+    "tags": []
+  },
+  {
+    "name": "Beefsteak Tomatoes, Large - 1lb",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_b6904147666f40988c2b7c4bd616982c~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_b6904147666f40988c2b7c4bd616982c~mv2.jpg",
+    "department": "food",
+    "category": "vegetables",
+    "tags": ["most-popular"]
+  },
+  {
+    "name": "Greenhouse Cucumber - 1lb",
+    "price": 0.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_4da77aa2a0d64d599c150d9d023a931a~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_4da77aa2a0d64d599c150d9d023a931a~mv2.jpg",
+    "department": "food",
+    "category": "vegetables",
+    "tags": []
+  },
+  {
+    "name": "Hass Avocados, Ready-to-Eat - 1lb",
+    "price": 2.99,
+    "discountPrice": 2.69,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_b5b9284a44384c8dbce0bc27bad2dda4~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_b5b9284a44384c8dbce0bc27bad2dda4~mv2.jpg",
+    "department": "food",
+    "category": "fruit",
+    "tags": ["best-deal"]
+  },
+
+  {
+    "name": "Bartlett Pear - 1lb",
+    "price": 1.29,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_1b506c21a43e46338d166ea6b5168034~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_1b506c21a43e46338d166ea6b5168034~mv2.jpg",
+    "department": "food",
+    "category": "fruit",
+    "tags": []
+  },
+  {
+    "name": "Ripe Apple - 1lb",
+    "price": 1.2,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_15202cd4220942879ef52cd80823bb30~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_15202cd4220942879ef52cd80823bb30~mv2.jpg",
+    "department": "food",
+    "category": "fruit",
+    "tags": []
+  },
+  {
+    "name": "Strawberries - 1lb",
+    "price": 4.99,
+    "discountPrice": 4.49,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_7f6d45dc2b004e88ac1f4eee127ff332~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_7f6d45dc2b004e88ac1f4eee127ff332~mv2.jpg",
+    "department": "food",
+    "category": "fruit",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Navel Orange - 1lb",
+    "price": 1.59,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_80f5d413ccd44506ba12f7975cb37fa3~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_80f5d413ccd44506ba12f7975cb37fa3~mv2.jpg",
+    "department": "food",
+    "category": "fruit",
+    "tags": ["most-popular"]
+  },
+  {
+    "name": "Banana Bunch - 1lb",
+    "price": 1.89,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_433f9eaf55034486964ef040c3b817f5~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_433f9eaf55034486964ef040c3b817f5~mv2.jpg",
+    "department": "food",
+    "category": "fruit",
+    "tags": []
+  },
+
+  {
+    "name": "Wild Domestic Shrimps - 1lb",
+    "price": 26.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_ec572ad9a22f46be89de7c7937a3d5a4~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ec572ad9a22f46be89de7c7937a3d5a4~mv2.jpg",
+    "department": "food",
+    "category": "fish-seafood",
+    "tags": []
+  },
+  {
+    "name": "Iceberg Mussels - 1lb",
+    "price": 27.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_8b97e2df130b4b92a6d43ed3abe94853~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_8b97e2df130b4b92a6d43ed3abe94853~mv2.jpg",
+    "department": "food",
+    "category": "fish-seafood",
+    "tags": []
+  },
+  {
+    "name": "Tuna Steak Fillet - 1lb",
+    "price": 29.99,
+    "discountPrice": 26.99,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_58835d9ae93f4c43af863ba0e76ae2a0~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_58835d9ae93f4c43af863ba0e76ae2a0~mv2.jpg",
+    "department": "food",
+    "category": "fish-seafood",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "King Salmon Fillet - 1lb",
+    "price": 29.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_482ca408f8de4c5eaa6accc9dd5791b5~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_482ca408f8de4c5eaa6accc9dd5791b5~mv2.jpg",
+    "department": "food",
+    "category": "fish-seafood",
+    "tags": ["most-popular"]
+  },
+
+  {
+    "name": "Soft-Baked Chocolate Chunk Cookies 4 ct.",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_36d41200f4b64ce9ae3217477852d196~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_36d41200f4b64ce9ae3217477852d196~mv2.jpg",
+    "department": "food",
+    "category": "bakery",
+    "tags": []
+  },
+  {
+    "name": "Chocolate Fudge Brownies",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_6051735fe0f54527ad1c16cd0638b1f2~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6051735fe0f54527ad1c16cd0638b1f2~mv2.jpg",
+    "department": "food",
+    "category": "bakery",
+    "tags": []
+  },
+  {
+    "name": "Banana Chocolate Chip Pound Cake",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_4cb5c7b10bf34549861bc763c08ecddd~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_4cb5c7b10bf34549861bc763c08ecddd~mv2.jpg",
+    "department": "food",
+    "category": "bakery",
+    "tags": []
+  },
+  {
+    "name": "Oven-Ready Chocolate Croissants 4 ct.",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_dd230a3f834349489ffa328e14edd27a~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_dd230a3f834349489ffa328e14edd27a~mv2.jpg",
+    "department": "food",
+    "category": "bakery",
+    "tags": []
+  },
+
+  {
+    "name": "Natural Yogurt, Cherry on the Bottom",
+    "price": 1.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_ce9da401e5464a1bb644f60cac35975d~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ce9da401e5464a1bb644f60cac35975d~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "Greek Yogurt, Strawberry on the Bottom",
+    "price": 2.19,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_15f2594a8b9f4aceb54b38e6b99cd61d~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_15f2594a8b9f4aceb54b38e6b99cd61d~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": ["most-popular"]
+  },
+  {
+    "name": "Feta Cheese, Crumbled 4 oz.",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_37fddce39ea447c0b2782553b3e66271~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_37fddce39ea447c0b2782553b3e66271~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "Cream Cheese Spread 8 oz.",
+    "price": 3.99,
+    "discountPrice": 3.59,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_cc314d70076e442fadd82ce2e39758a1~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_cc314d70076e442fadd82ce2e39758a1~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": ["best-deal"]
+  },
+
+  {
+    "name": "Natural Medium Brown Eggs",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_7629ffdb3169412798b7645e34fa2d8b~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_7629ffdb3169412798b7645e34fa2d8b~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "Natural Large White Eggs",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_6846a2d83d89405eb592b3f0dc2d683b~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6846a2d83d89405eb592b3f0dc2d683b~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "Chocolate Milk Carton",
+    "price": 0.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_01f243be78904ba9b26f10752251e5c9~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_01f243be78904ba9b26f10752251e5c9~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "2% Reduced Fat Milk, 64 oz.",
+    "price": 2.69,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_a8e36a0198ff49608d1a5ab76c80a6f8~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_a8e36a0198ff49608d1a5ab76c80a6f8~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "Whole Milk Gallon, 64 oz.",
+    "price": 2.69,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_12ade01a54ff4859a2f9fa4deaf534a3~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_12ade01a54ff4859a2f9fa4deaf534a3~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  },
+  {
+    "name": "European Style Butter 8 oz.",
+    "price": 5.69,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_fe7364e3c27548589db8e6c04aa0962a~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_fe7364e3c27548589db8e6c04aa0962a~mv2.jpg",
+    "department": "food",
+    "category": "dairy-eggs",
+    "tags": []
+  }
+  ,
+  {
+    "name": "Chamomile Tea 16 ct.",
+    "department": "beverages",
+    "category": "tea",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_1993656162b14850b0786905ccf45723~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_1993656162b14850b0786905ccf45723~mv2.jpg",
+    "tags": ["most-popular"]
+  },
+  {
+    "name": "Herbal Tea 16 ct.",
+    "department": "beverages",
+    "category": "tea",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_260c0b2e4a224901b112978a8a2c1c6e~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_260c0b2e4a224901b112978a8a2c1c6e~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Black Tea 16 ct.",
+    "department": "beverages",
+    "category": "tea",
+    "price": 3.99,
+    "discountPrice": 3.59,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_552669e36d4e47ae825d632942319412~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_552669e36d4e47ae825d632942319412~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "White Tea 16 ct.",
+    "department": "beverages",
+    "category": "tea",
+    "price": 3.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_e6870dd7bf6b4d7d9aa751f2062c451c~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_e6870dd7bf6b4d7d9aa751f2062c451c~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Instant Coffee, Rich Aroma",
+    "department": "beverages",
+    "category": "coffee",
+    "price": 8.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_c7ee58cc97d2493db9586b4278b7a194~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_c7ee58cc97d2493db9586b4278b7a194~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Decaffeinated Instant Coffee, Rich Aroma",
+    "department": "beverages",
+    "category": "coffee",
+    "price": 8.99,
+    "discountPrice": 8.09,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_a3f22d6f9d5740d4ba7e81fdcb2dad1c~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_a3f22d6f9d5740d4ba7e81fdcb2dad1c~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Vietnam Blend Whole Bean Coffee",
+    "department": "beverages",
+    "category": "coffee",
+    "price": 12.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_9e6c5819aa2944258855d46e50f3b75b~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_9e6c5819aa2944258855d46e50f3b75b~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Colombian Ground Coffee",
+    "department": "beverages",
+    "category": "coffee",
+    "price": 11.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_b116f22555034a35af94e5937dbc4a4c~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_b116f22555034a35af94e5937dbc4a4c~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Fresh-Squeezed Orange Juice 64 oz.",
+    "department": "beverages",
+    "category": "soft-drinks",
+    "price": 6.99,
+    "discountPrice": 6.29,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_04e4857ebe0c4ea3b9fccda10ff08c81~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_04e4857ebe0c4ea3b9fccda10ff08c81~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Greenland Water Bottle 64 oz.",
+    "department": "beverages",
+    "category": "soft-drinks",
+    "price": 2.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_d71a1ad87f1c44e5b71e5536123cd973~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d71a1ad87f1c44e5b71e5536123cd973~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Raspberry Flavor Soda",
+    "department": "beverages",
+    "category": "soft-drinks",
+    "price": 6.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_554aebe6432f4176a11dc1c67d5cda74~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_554aebe6432f4176a11dc1c67d5cda74~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Lemon Flavor Soda",
+    "department": "beverages",
+    "category": "soft-drinks",
+    "price": 6.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_cdc1ec1f388743c886764d9c60b9de3e~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_cdc1ec1f388743c886764d9c60b9de3e~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Brown Ale Glass Bottle 16 oz.",
+    "department": "beverages",
+    "category": "beer",
+    "price": 8.99,
+    "discountPrice": 8.09,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_2bd65ba805394358838d82695f3b92e1~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2bd65ba805394358838d82695f3b92e1~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Blonde Ale Glass Bottle 16 oz.",
+    "department": "beverages",
+    "category": "beer",
+    "price": 8.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_336e35bd4f1b4a509984988d8087ee2b~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_336e35bd4f1b4a509984988d8087ee2b~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Pale Ale Glass Bottle 16 oz.",
+    "department": "beverages",
+    "category": "beer",
+    "price": 8.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_6e7e2d045155434682b4235b7cbf464d~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6e7e2d045155434682b4235b7cbf464d~mv2.jpg",
+    "tags": ["most-popular"]
+  },
+  {
+    "name": "Wheat Beer Glass Bottle 16 oz.",
+    "department": "beverages",
+    "category": "beer",
+    "price": 8.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_c3d24d2a803a46d9bb0ad1686e59f106~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_c3d24d2a803a46d9bb0ad1686e59f106~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Chinon Rose 750 ml.",
+    "department": "beverages",
+    "category": "wine",
+    "price": 14.99,
+    "discountPrice": 13.49,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_f7e388d35f224a20b666db8e6c6c2a42~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f7e388d35f224a20b666db8e6c6c2a42~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Cabernet Sauvignon 750 ml.",
+    "department": "beverages",
+    "category": "wine",
+    "price": 14.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_f7e388d35f224a20b666db8e6c6c2a42~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f7e388d35f224a20b666db8e6c6c2a42~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Sauvignon Blanc 750 ml.",
+    "department": "beverages",
+    "category": "wine",
+    "price": 14.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_949b5351d77c4ac8bf8e693d2800136b~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_949b5351d77c4ac8bf8e693d2800136b~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Chardonnay 750 ml.",
+    "department": "beverages",
+    "category": "wine",
+    "price": 14.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_e47929d9a4bf4259beaf4d698d1a1a4f~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_e47929d9a4bf4259beaf4d698d1a1a4f~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Olive Oil",
+    "department": "food",
+    "category": "pantry",
+    "price": 4.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_d145f988891945e0ba8b1e38710fdb06~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d145f988891945e0ba8b1e38710fdb06~mv2.jpg",
+    "tags": ["most-popular"]
+  },
+
+  {
+    "name": "Wooden Cutting Board",
+    "department": "household",
+    "category": "home-kitchen",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_3e6e1b03199b45a3ab265363bfe66988~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_3e6e1b03199b45a3ab265363bfe66988~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "LED Light Bulb 12W",
+    "department": "household",
+    "category": "home-kitchen",
+    "price": 0.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_0f2a1dae27814d23a665f14ad8109ae9~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_0f2a1dae27814d23a665f14ad8109ae9~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Fluorescent Light Bulb 26W",
+    "department": "household",
+    "category": "home-kitchen",
+    "price": 0.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_d655fb42f31f4015bb747846fd149ab3~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d655fb42f31f4015bb747846fd149ab3~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Floor Liquid Cleaner",
+    "department": "household",
+    "category": "cleaning-supplies",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_1bc7e1bee32f430d8b65ddd5a03fbc17~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_1bc7e1bee32f430d8b65ddd5a03fbc17~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Toilet Paper 100 sheets",
+    "department": "household",
+    "category": "cleaning-supplies",
+    "price": 6.49,
+    "discountPrice": 5.84,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_1369650c2f154ae8b35a870cc2c88145~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_1369650c2f154ae8b35a870cc2c88145~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Cleaning Sponge",
+    "department": "household",
+    "category": "cleaning-supplies",
+    "price": 0.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_643a33f359794fbdbf600bcc67eca55d~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_643a33f359794fbdbf600bcc67eca55d~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Multi-Purpose Cleaner Lemon",
+    "department": "household",
+    "category": "cleaning-supplies",
+    "price": 2.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_971e3b707e7e40b8bbddb78b8d9320b1~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_971e3b707e7e40b8bbddb78b8d9320b1~mv2.jpg",
+    "tags": []
+  },
+
+  {
+    "name": "Make Up",
+    "department": "personal-care",
+    "category": "personal-hygiene",
+    "price": 7.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_972c775ac4b74203a81c286301aa878b~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_972c775ac4b74203a81c286301aa878b~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Shaving Gel",
+    "department": "personal-care",
+    "category": "personal-hygiene",
+    "price": 5.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_9a04df0ac2d74958b61e1b0194d3aff0~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_9a04df0ac2d74958b61e1b0194d3aff0~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Spray Deodorant",
+    "department": "personal-care",
+    "category": "personal-hygiene",
+    "price": 4.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_e90daab4fca34608badf78cfc4ceca52~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_e90daab4fca34608badf78cfc4ceca52~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Whitening Toothpaste 4 oz.",
+    "department": "personal-care",
+    "category": "personal-hygiene",
+    "price": 2.99,
+    "discountPrice": 2.69,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_252f66571a204c8fae64a7326c0eceb1~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_252f66571a204c8fae64a7326c0eceb1~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+
+  {
+    "name": "Fruit Puree Pouch 4 oz.",
+    "department": "personal-care",
+    "category": "babies",
+    "price": 0.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_fe6c2b063e244637a28e105e9dd6b443~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_fe6c2b063e244637a28e105e9dd6b443~mv2.jpg",
+    "tags": []
+  },
+  {
+    "name": "Baby Body Powder",
+    "department": "personal-care",
+    "category": "babies",
+    "price": 4.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_c69b3a426c16419d90f3952110f06167~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_c69b3a426c16419d90f3952110f06167~mv2.jpg",
+    "tags": ["most-popular"]
+  },
+  {
+    "name": "Milk-Based Powder Formula With Iron 29 oz.",
+    "department": "personal-care",
+    "category": "babies",
+    "price": 8.99,
+    "discountPrice": 8.09,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_cc6bc17003204c21b80e50820c5aafcf~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_cc6bc17003204c21b80e50820c5aafcf~mv2.jpg",
+    "tags": ["best-deal"]
+  },
+  {
+    "name": "Milk-Based Infant Formula Powder 12.5 oz.",
+    "department": "personal-care",
+    "category": "babies",
+    "price": 8.99,
+    "discountPrice": null,
+    "inStock": true,
+    "quantity": 100,
+    "image": "https://static.wixstatic.com/media/c837a6_22903ca9413d409888485c4762b297d8~mv2.jpg/v1/fill/w_459,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_22903ca9413d409888485c4762b297d8~mv2.jpg",
+    "tags": []
+  }
+]
