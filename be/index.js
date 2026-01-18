@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import router from "./routes/authRoutes.js";
 import cors from "cors";
 import RootRouter from "./routes/index.js";
+import bcrypt from "bcrypt";
+import User from "./models/user.js";
 
 
 dotenv.config();
@@ -27,6 +29,8 @@ app.use("/api/auth", router);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+
 
 app.listen(PORT, () => {
     console.log("Server is running on port 8080");
