@@ -116,7 +116,7 @@ export default function Header() {
 
           <div className="flex gap-6 text-white text-xl">
             
-            <IconWrapper><FaMapMarkerAlt className="text-sm" /></IconWrapper>
+            
             <IconWrapper><FaHeart className="text-sm" onClick={() => {if(!user) alert("Please login first"); else navigate("/wishlist")}} /></IconWrapper>
             <IconWrapper><FaShoppingCart className="text-sm" onClick={() => navigate("/cart")}/></IconWrapper>
 
