@@ -16,6 +16,78 @@ export const getAllProducts = async (req, res) => {
     }
 };
 
+export const createProduct = async (req, res) => {
+  try {
+    const {
+      name,
+      price,
+      discountPrice,
+      quantity,
+      image,
+      tags,
+      description
+    } = req.body;
+
+    if (!name || !price || !image || !tags) {
+      return res.status(400).json({ message: "Missing required fields" });
+    }
+
+    const product = await Product.create({
+      name,
+      price,
+      discountPrice,
+      quantity,
+      image,
+      tags,
+      description,
+      inStock: quantity > 0
+    });
+
+    return res.status(201).json({
+      message: "Product created successfully",
+      product
+    });
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
+  }
+};
+
+export const updateProduct = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const product = await Product.findById(id);
+    if (!product)
+      return res.status(404).json({ message: "Product not found" });
+
+
+    Object.keys(req.body).forEach(key => {
+      product[key] = req.body[key];
+    });
+
+    await product.save();
+
+    res.json({ product });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+
+export const deleteProduct = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const product = await Product.findByIdAndDelete(id);
+    if (!product)
+      return res.status(404).json({ message: "Product not found" });
+
+    res.json({ message: "Product deleted" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
 //orders
 export const getAllOrders = async (req, res) => {
     try {
@@ -26,24 +98,24 @@ export const getAllOrders = async (req, res) => {
     }
 };
 
-export const updateOrderStatus = async (req, res) => {
-  try {
-    const { id } = req.params;
-    const { status } = req.body;
+// export const updateOrderStatus = async (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     const { status } = req.body;
 
-    const order = await Order.findById(id);
-    if (!order) {
-      return res.status(404).json({ message: "Order not found" });
-    }
+//     const order = await Order.findById(id);
+//     if (!order) {
+//       return res.status(404).json({ message: "Order not found" });
+//     }
 
-    order.status = status;
-    await order.save();
+//     order.status = status;
+//     await order.save();
 
-    res.json(order);
-  } catch (e) {
-    res.status(500).json({ message: e.message });
-  }
-};
+//     res.json(order);
+//   } catch (e) {
+//     res.status(500).json({ message: e.message });
+//   }
+// };
 
 
 
