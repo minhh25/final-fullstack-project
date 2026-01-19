@@ -1,8 +1,28 @@
 import AdminLayout from "../components/AdminLayout";
 import Status from "../components/Status";
-import { orders } from "../data/orders.mock";
+
+import { useEffect, useState } from "react";
+import axios from "../api/axios";
 
 export default function Orders() {
+  const [orders, setOrders] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const res = await axios.get("/admin/orders");
+        setOrders(Array.isArray(res.data) ? res.data : res.data.orders);
+      } catch (err) {
+        console.error(err);
+        setOrders([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchOrders();
+  }, []);
   return (
     <AdminLayout>
       <h2 className="text-2xl font-semibold mb-6">Order Management</h2>
