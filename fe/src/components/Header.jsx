@@ -8,6 +8,8 @@ import {
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import SearchBar from "./SearchBar.jsx";
+
 
 
 export default function Header() {
@@ -36,6 +38,7 @@ export default function Header() {
     household: ["home-kitchen", "cleaning-supplies"],
     "personal-care": ["personal-hygiene", "babies"],
   };
+  
 
   const [openDropdown, setOpenDropdown] = useState(null);
   const dropdownRef = useRef(null);
@@ -107,11 +110,14 @@ export default function Header() {
           <Link to="/" className="text-3xl font-extrabold text-white">
             Clovers.
           </Link>
+          <div className="flex-1 flex justify-center">
+            <SearchBar />
+          </div>
 
           <div className="flex gap-6 text-white text-xl">
-            <IconWrapper><FaSearch className="text-sm" /></IconWrapper>
+            
             <IconWrapper><FaMapMarkerAlt className="text-sm" /></IconWrapper>
-            <IconWrapper><FaHeart className="text-sm" /></IconWrapper>
+            <IconWrapper><FaHeart className="text-sm" onClick={() => {if(!user) alert("Please login first"); else navigate("/wishlist")}} /></IconWrapper>
             <IconWrapper><FaShoppingCart className="text-sm" onClick={() => navigate("/cart")}/></IconWrapper>
 
             <div className="relative">

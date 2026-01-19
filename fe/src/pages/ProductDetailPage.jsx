@@ -4,8 +4,10 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { useCart } from "../context/CartContext.jsx";
 import { FaHeart } from "react-icons/fa";
+import { useAuth } from "../context/AuthContext.jsx";
 
 export default function ProductDetailPage() {
+  const { token, user } = useAuth();
   const navigate = useNavigate();
   const { department, category, productId } = useParams();
   const { addToCart } = useCart();
@@ -40,15 +42,19 @@ export default function ProductDetailPage() {
 
     const fetchWishlistState = async () => {
       try {
+        if (!token){
+          setWishlisted(false);
+          return;
+        }
         // API check product in wishlist (server)
         // Nếu bạn chưa làm auth/me thì đổi endpoint theo BE của bạn
-        const res = await fetch(`http://localhost:8080/users/me/wishlist/${productId}`, {
+        const res = await fetch(`http://localhost:8080/wishlist/${productId}`, {
           headers: {
-            // Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
+            Authorization: `Bearer ${token}`
           },
         });
         const data = await res.json(); // { wishlisted: true/false }
-        setWishlisted(Boolean(data?.wishlisted));
+        setWishlisted(Boolean(data?.exist));
       } catch (e) {
         // nếu chưa có endpoint thì cứ im lặng
       }
@@ -56,35 +62,42 @@ export default function ProductDetailPage() {
 
     fetchDetail();
     fetchWishlistState();
-  }, [productId]);
+  }, [productId, token]);
 
   const decQty = () => setQty((q) => Math.max(1, q - 1));
   const incQty = () => setQty((q) => q + 1);
 
   const onAddToCart = () => {
     if (!product) return;
+    if (!token) {
+      alert("Please login to use cart.");
+      return;
+    }
     addToCart(product, qty);
   };
 
   const toggleWishlist = async () => {
     if (!product) return;
     if (loadingWish) return;
-
+    if (!token) {
+      alert("Please login to use wishlist.");
+      return;
+    }
     try {
       setLoadingWish(true);
-
       // toggle wishlist (server)
-      const res = await fetch(`http://localhost:8080/users/me/wishlist/toggle`, {
+      const res = await fetch(`http://localhost:8080/wishlist/toggle`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({ productId }),
       });
 
       const data = await res.json(); // { wishlisted: true/false }
-      setWishlisted(Boolean(data?.wishlisted));
+      const existNow = Array.isArray(data?.wishlist) && data.wishlist.some((id) => id.toString() === productId);
+      setWishlisted(existNow);
     } catch (e) {
       console.error("toggle wishlist error:", e);
     } finally {

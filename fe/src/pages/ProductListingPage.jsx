@@ -38,6 +38,13 @@ export default function ProductListingPage() {
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       const pTags = product.tags || [];
+
+      if(department == "deals"){
+        return (
+          pTags.includes("best-deal") && product.price <= maxPrice
+        )
+      }
+
       const matchDepartment = department === product.department;
       const matchCategory = category === product.category || !category;
       const matchTags = selectedTags.length

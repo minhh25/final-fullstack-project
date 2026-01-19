@@ -15,6 +15,8 @@ import {
 import CartPage from './pages/CartPage.jsx';
 import ProductDetailPage from './pages/ProductDetailPage.jsx';
 import WishListPage from './pages/WishListPage.jsx';
+import PaymentPage from './pages/PaymentPage.jsx';
+import MyOrderPage from './pages/MyOrderPage.jsx';
 import Dashboard from './admin/pages/Dashboard.jsx';
 import Users from './admin/pages/Users.jsx';
 import Products from './admin/pages/Products.jsx';
@@ -39,8 +41,14 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
+
+
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/customer-support" element={<CustomerSupport />} />
+
 
       <Route path="/:department" element={<ProductListingPage />} />
       <Route path="/:department/:category" element={<ProductListingPage />} />
@@ -48,8 +56,10 @@ function AppRoutes() {
       <Route path="/:department/:category/:productId" element={<ProductDetailPage />} />
       <Route path="/wishlist" element={<WishListPage />} />
 
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/signup" element={<SignUp />} />
+
+      <Route path="/payment" element={<PaymentPage />} />
+      <Route path="/my-orders" element={<MyOrderPage />} />
+
 
       <Route path="/admin/dashboard" element={<Dashboard />} />
       <Route path="/admin/users" element={<Users />} />
