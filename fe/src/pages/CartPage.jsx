@@ -1,8 +1,10 @@
 import { useCart } from "../context/CartContext.jsx";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import { useNavigate } from "react-router-dom";
 
 export default function CartPage() {
+  const navigate = useNavigate();
   const { cartItems, clearCart, removeFromCart, increaseQuantity, decreaseQuantity, totals } =
     useCart();
 
@@ -133,7 +135,7 @@ export default function CartPage() {
                 </button>
                 <button
                   className="px-6 py-3 rounded-xl bg-black text-white hover:opacity-90"
-                  onClick={() => alert("Checkout later 😄")}
+                  onClick={() => navigate("/payment")}
                 >
                   Checkout
                 </button>
