@@ -4,7 +4,7 @@ import { auth, isAdmin } from "../middlewares/authMiddlewares.js";
 import { addToCart, clearCart, getCart, removeCartItem, updateCartItemQty } from "../controllers/cart.js";
 import { getWishlist, toggleWishlist, checkExistInWishlist } from "../controllers/user.js";
 import { createOrder, getMyOrders } from "../controllers/order.js";
-import {getAllUsers , getAllProducts, getAllOrders, createUser, updateUser, deleteUser, getDashboardData, createProduct, updateProduct, deleteProduct} from "../controllers/adminController.js";
+import {getAllUsers , getAllProducts, getAllOrders, createUser, updateUser, deleteUser, getDashboardData, createProduct, updateProduct, deleteProduct, updateStatus} from "../controllers/adminController.js";
 
 
 const RootRouter = Router();
@@ -41,7 +41,7 @@ RootRouter.delete("/admin/products/:id",auth, deleteProduct, isAdmin);
 
 //orders
 RootRouter.get("/admin/orders",auth, isAdmin, getAllOrders);
-// RootRouter.put("/admin/orders/:id",auth, isAdmin, updateOrderStatus);
+RootRouter.put("/admin/orders/:id",auth, isAdmin, updateStatus);
 
 //dashboard
 RootRouter.get("/admin/dashboard",auth, getDashboardData, isAdmin);

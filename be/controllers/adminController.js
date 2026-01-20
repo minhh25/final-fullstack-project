@@ -90,32 +90,33 @@ export const deleteProduct = async (req, res) => {
 
 //orders
 export const getAllOrders = async (req, res) => {
-    try {
-        const orders = await Order.find().populate('user', 'username email').populate('items.product', 'name price');
-        res.status(200).json(orders);
-    } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-    }
+  try {
+    const orders = await Order.find()
+      .populate("user", "username") // REQUIRED: get customer name
+      .sort({ createdAt: -1 });
+
+    res.status(200).json({ orders });
+  } catch (e) {
+    res.status(500).json({ message: e.message });
+  }
 };
 
-// export const updateOrderStatus = async (req, res) => {
-//   try {
-//     const { id } = req.params;
-//     const { status } = req.body;
+export const updateStatus = async (req, res) => {
+  try {
+    const { id } = req.params;   
+    const { status } = req.body;
 
-//     const order = await Order.findById(id);
-//     if (!order) {
-//       return res.status(404).json({ message: "Order not found" });
-//     }
+    const order = await Order.findById(id);
+    if (!order) return res.status(404).json({ message: "Order not found" });
 
-//     order.status = status;
-//     await order.save();
+    order.status = status;
+    await order.save();
 
-//     res.json(order);
-//   } catch (e) {
-//     res.status(500).json({ message: e.message });
-//   }
-// };
+    res.json({ order });
+  } catch (e) {
+    res.status(500).json({ message: e.message });
+  }
+};
 
 
 
