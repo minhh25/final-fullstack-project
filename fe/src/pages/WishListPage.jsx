@@ -29,7 +29,7 @@ export default function WishListPage() {
 
   const removeWishlist = async (productId) => {
     try {
-      await fetch("http://localhost:8080//wishlist/toggle", {
+      await fetch("http://localhost:8080/wishlist/toggle", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
